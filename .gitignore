@@ -1,29 +1,124 @@
-# Python
+# ======================
+# Python Bytecode & Cache
+# ======================
 __pycache__/
 *.py[cod]
-*.pyo
-*.pyd
-*.egg-info/
-dist/
-build/
+*$py.class
 
-# Virtual environments
+# ======================
+# Virtual Environments
+# ======================
 venv/
 env/
 .venv/
+ENV/
+env.bak/
+venv.bak/
 
-# Jupyter
-.ipynb_checkpoints
+# ======================
+# Distribution / Packaging
+# ======================
+build/
+dist/
+*.egg-info/
+.eggs/
+*.egg
+MANIFEST
 
-# VSCode
+# ======================
+# PyInstaller
+# ======================
+*.manifest
+*.spec
+
+# ======================
+# Unit Test / Coverage Reports
+# ======================
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+pytest_cache/
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+
+# ======================
+# Jupyter Notebook
+# ======================
+.ipynb_checkpoints/
+
+# ======================
+# IDE / Editor
+# ======================
 .vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
 
-# Mac
+# ======================
+# Mac / Linux / Windows
+# ======================
 .DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+Thumbs.db
+ehthumbs.db
+Desktop.ini
 
-# Data files (important for ML)
+# ======================
+# Environment Variables / Secrets
+# ======================
+.env
+.env.*
+*.env
+
+# ======================
+# Logs
+# ======================
+*.log
+
+# ======================
+# Database
+# ======================
+*.sqlite3
+*.db
+
+# ======================
+# ML / Data Science (IMPORTANT)
+# ======================
 data/
-*.csv
-*.json
-*.pkl
+dataset/
+datasets/
+raw_data/
+processed_data/
+models/
+checkpoints/
+*.pt
+*.pth
+*.onnx
 *.h5
+*.pkl
+*.joblib
+*.npy
+*.npz
+
+# ======================
+# Flask / Django
+# ======================
+instance/
+*.sqlite
+local_settings.py
+db.sqlite3
+
+# ======================
+# Misc
+# ======================
+pip-wheel-metadata/
+share/python-wheels/
