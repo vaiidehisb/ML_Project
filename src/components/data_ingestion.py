@@ -25,10 +25,8 @@ class DataIngestion:
     def initiate_data_ingestion(self):
         logging.info("Entered the data ingestion method or component")
         try:
-            # use os.path.join to build cross-platform path and avoid escape-sequence warnings
-            data_file_path = os.path.join('notebook','data','stud.csv')
-            df = pd.read_csv(data_file_path)
-            logging.info('Read the dataset as dataframe from %s', data_file_path)
+            df=pd.read_csv('notebook/data/stud.csv')
+            logging.info('Read the dataset as dataframe')
 
             os.makedirs(os.path.dirname(self.ingestion_config.train_data_path),exist_ok=True)
 
@@ -41,7 +39,7 @@ class DataIngestion:
 
             test_set.to_csv(self.ingestion_config.test_data_path,index=False,header=True)
 
-            logging.info("Ingestion of the data is completed")
+            logging.info("Inmgestion of the data iss completed")
 
             return(
                 self.ingestion_config.train_data_path,
